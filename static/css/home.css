@@ -1,10 +1,6 @@
-.head{
-    color: red;
-    font-family: arial;
-}
+
 .nav{
     display: flex;
-    background-color: lightblue;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -13,7 +9,7 @@
 }
 .link_1{
     display: flex;
-    background-color: lightpink;
+    
     width: 200px;
     justify-content: center;
     align-items: center;
@@ -24,14 +20,49 @@
     height: 90px;
     border-radius: 10px;
     font-family: arial;
-    font-size:16px;
+    font-size:19px;
+    background-color: white;
+    transition: 0.20s;
+    cursor: pointer;
 }
+.link_1_button:hover{
+    background-color: #15a146;
+    color: white;
+
+}
+.link_2_button{
+    width: 200px;
+    height: 90px;
+    border-radius: 10px;
+    font-family: arial;
+    font-size:19px;
+    background-color: #15a146;
+    color: white;
+    cursor: pointer;
+}
+.link_2_button:hover{
+    background-color: white;
+    color: black;
+}
+
 .papa{
-    background-color: lightblue;
+    
     width: 1380px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 550px;
+    position: relative;
+    top: 100px;
+    height: 100px;
     column-gap: 10px;
+}
+
+.text{
+    width: 1380px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
 }
