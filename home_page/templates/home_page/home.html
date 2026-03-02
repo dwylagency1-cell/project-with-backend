@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/static/css/home.css">
 </head>
-<body>
-    <h1>home page</h1>
-    <a href="{{url_for('student.studies')}}">Make a list</a>
-    <a href="{{url-for('view_todo.view')}}">View your list</a>
+<body style="background-color: #ECFDF5;">
+    <div class="nav">
+        <div style="background-color: lightpink;height: 70px; width: 200px; display: flex; justify-content: center; align-items: center;">
+            <img width="200px" src="/static/css/study_planner-removebg-preview.png">
+        </div>
+        <div style="background-color: lightpink;height: 70px; width: 400px; display: flex;
+        flex-direction: row; justify-content: center;
+        align-items: center; column-gap: 20px; font-family: arial;">
+            <p>Home</p>
+            <p>About</p>
+            <p>Blog</p>
+            <p>Contact</p>
+        </div>
+        <div style="background-color: lightpink;height: 70px; width: 200px;"></div>
+    </div>
+    <div class="papa">
+        <h1></h1>
+        <div class="link_1">
+            <a href="{{url_for('student.studies') }}"><button class="link_1_button">Make a list</button> </a>
+        </div>
+        <div class="link_1">
+            <a href="{{url_for('view_todo.view') }}"><button class="link_1_button">View your list</button></a>
+        </div>
+    </div>
 </body>
 </html>
