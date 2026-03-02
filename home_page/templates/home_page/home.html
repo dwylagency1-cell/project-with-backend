@@ -8,26 +8,29 @@
 </head>
 <body style="background-color: #ECFDF5;">
     <div class="nav">
-        <div style="background-color: lightpink;height: 70px; width: 200px; display: flex; justify-content: center; align-items: center;">
-            <img width="200px" src="/static/css/study_planner-removebg-preview.png">
+        <div style="height: 70px; width: 200px; display: flex; justify-content: center; align-items: center;">
+            <img width="300px" src="/static/css/study_planner-removebg-preview.png">
         </div>
-        <div style="background-color: lightpink;height: 70px; width: 400px; display: flex;
+        <div style="height: 70px; width: 400px; display: flex;
         flex-direction: row; justify-content: center;
         align-items: center; column-gap: 20px; font-family: arial;">
-            <p>Home</p>
+            <p style="color: #15a146;">Home</p>
             <p>About</p>
-            <p>Blog</p>
+            <p style="color: #15a146;">Blog</p>
             <p>Contact</p>
         </div>
-        <div style="background-color: lightpink;height: 70px; width: 200px;"></div>
+        <div style="height: 70px; width: 200px;"></div>
+    </div>
+    <div class="text">
+        <h1 style="font-size: 78px; color: rgb(30, 2, 2);">Study <span style="color: #15a146;">Bro</span> !</h1>
+            
     </div>
     <div class="papa">
-        <h1></h1>
         <div class="link_1">
             <a href="{{url_for('student.studies') }}"><button class="link_1_button">Make a list</button> </a>
         </div>
         <div class="link_1">
-            <a href="{{url_for('view_todo.view') }}"><button class="link_1_button">View your list</button></a>
+            <a href="{{url_for('view_todo.view') }}"><button class="link_2_button">View your list</button></a>
         </div>
     </div>
 </body>
