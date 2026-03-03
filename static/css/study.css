@@ -1,0 +1,44 @@
+.study_div{
+    
+    width: 300px;
+    height: 200px;
+}
+.papa_of_div{
+    
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.papa_of_div_2{
+    
+    height: 650px;
+
+}
+.input{
+    padding-left: 10px;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-style: solid;
+}
+.button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: #15a146;
+    color: white;
+    font-size: 15px;
+    transition: 0.20s;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: white;
+    color: black;
+}
