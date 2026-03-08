@@ -17,5 +17,3 @@ def studies():
         db.session.commit()
 
         return  redirect(url_for('student.studies'))
-    
-    
