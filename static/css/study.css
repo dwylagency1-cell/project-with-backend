@@ -10,10 +10,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 .papa_of_div_2{
     
     height: 650px;
+    position: relative;
 
 }
 .input{
@@ -37,6 +39,7 @@
     font-size: 15px;
     transition: 0.20s;
     cursor: pointer;
+    border-style: solid;
 }
 .button:hover{
     background-color: white;
