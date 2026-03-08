@@ -4,14 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/static/css/view.css">
 </head>
-<body>
-    <ul>
-        {%for view in todo_view%}
-            <li>{{view.subject}}</li>
-            <li>{{view.topic}}</li>
-        {%endfor%}
-    </ul>
+<body style="background-color: #ECFDF5;">
+    
+        <ul>
+            {%for view in todo_view%}
+                <div class="list">
+                    <div>
+                        <ol class="colour">Subject: {{view.subject}}</ol>
+                        
+                        <ol class="colour">Topic: {{view.topic}}</ol>
+                    </div>
+                    <div style=" display: flex; justify-content: center; align-items: center;
+                    margin-right: 20px;">
+                        <a href="{{ url_for('view_todo.delete', pid=view.pid) }}"><button class="button" >Delete</button></a>
+                    </div>
+                </div>
+            {%endfor%}
+        </ul>
+
+        <a href="{{ url_for('home.home_page') }}"><button class="home">Home</button></a>
+        
+    
     
 </body>
 </html>
